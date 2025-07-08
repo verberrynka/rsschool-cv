@@ -86,12 +86,12 @@ body {
 
   --font-family: "Inter", sans-serif;
 
-  --transition-duration: 0.3s;
+  --transition-duration: 0.5s;
 
-  --container-width: 1276px;
-  --container-padding-x: 12px;
+  --container-width: 1000px;
+  --container-padding-x: 24px;
   
-  --header-height: 100px;
+  --header-height: 80px;
 }
 
 a,
@@ -105,10 +105,10 @@ body {
 
   font-family: var(--font-family);
   color: var(--color-grey-dark);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.75;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
 }
 
 p:not(:last-child) {
@@ -119,5 +119,36 @@ p:not(:last-child) {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   padding-inline: var(--container-padding-x);
   margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--header-height);
+}
+
+.header__menu {
+  width: 100%;
+}
+
+.header__item {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: var(--color-grey-dark);
+  transition-duration: var(--transition-duration);
 }
 
