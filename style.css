@@ -164,3 +164,14 @@ p:not(:last-child) {
   background-color: var(--color-pink-dark);
   transition: width var(--transition-duration);
 }
+
+
+@media (hover: hover) {
+  .header__item:hover .header__link{
+    color: var(--color-pink-dark);
+  }
+
+  .header__item:hover .header__link::after {
+    width: 100%; 
+  }
+}
