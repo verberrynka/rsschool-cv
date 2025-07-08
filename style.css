@@ -99,3 +99,14 @@ button,
 svg * {
   transition-duration: var(--transition-duration);
 }
+
+body {
+  background-color: var(--color-white);
+
+  font-family: var(--font-family);
+  color: var(--color-grey-dark);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+}
