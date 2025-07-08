@@ -38,25 +38,23 @@ svg * {
   transition-property: fill, stroke;
 }
 
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 button {
   border: none;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-input,
-textarea,
-select,
-button {
   font: inherit;
-}
-
-button,
-label {
-  cursor: pointer;
 }
 
 html {
@@ -94,4 +92,10 @@ body {
   --container-max-width: 1276px;
 
   --header-height: 100px;
+}
+
+a,
+button,
+svg * {
+  transition-duration: var(--transition-duration);
 }
