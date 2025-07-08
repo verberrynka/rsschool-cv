@@ -88,9 +88,9 @@ body {
 
   --transition-duration: 0.3s;
 
-  /* --container-paddings: 60px 8px; */
-  --container-max-width: 1276px;
-
+  --container-width: 1276px;
+  --container-padding-x: 12px;
+  
   --header-height: 100px;
 }
 
@@ -114,3 +114,10 @@ body {
 p:not(:last-child) {
   margin-bottom: 32px;
 }
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+}
+
