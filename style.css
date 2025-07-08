@@ -68,3 +68,30 @@ body {
   min-height: 100%;
 }
 
+:root {
+  --color-white: #ffffff;
+
+  --color-green: #D3FF9D;
+
+  --color-pink-light: #FFD9E9;
+  --color-pink-dark: #EB419E;
+
+  --color-grey-light: #F8F8F8;
+  --color-grey-middle: #C2C2C2;
+  --color-grey-dark: #616161;
+
+  --border-pink-thin: 4px solid var(--color-pink-light);
+  --border-green-thin: 4px solid var(--color-green);
+
+  --border-pink-bold: 12px solid var(--color-pink-light);
+  --border-green-bold: 12px solid var(--color-green);
+
+  --font-family: "Inter", sans-serif;
+
+  --transition-duration: 0.3s;
+
+  /* --container-paddings: 60px 8px; */
+  --container-max-width: 1276px;
+
+  --header-height: 100px;
+}
