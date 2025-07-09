@@ -132,18 +132,18 @@ p:not(:last-child) {
   width: 100%;
 }
 
-.header__item {
+.header__menu-item {
   padding: 4px 8px;
   cursor: pointer;
 }
 
-.header__list {
+.header__menu-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.header__link {
+.header__menu-link {
   position: relative;
 
   display: inline-flex;
@@ -154,7 +154,7 @@ p:not(:last-child) {
   transition-duration: var(--transition-duration);
 }
 
-.header__link::after {
+.header__menu-link::after {
   content: '';
   position: absolute;
   width: 0;
@@ -167,11 +167,11 @@ p:not(:last-child) {
 
 
 @media (hover: hover) {
-  .header__item:hover .header__link{
+  .header__menu-item:hover .header__menu-link{
     color: var(--color-pink-dark);
   }
 
-  .header__item:hover .header__link::after {
+  .header__menu-item:hover .header__menu-link::after {
     width: 100%; 
   }
 }
