@@ -122,6 +122,10 @@ p:not(:last-child) {
 }
 
 .header {
+  background-color: var(--color-white);
+}
+
+.header__inner {
   display: flex;
   justify-content: center;
   align-items: center;
