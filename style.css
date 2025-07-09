@@ -121,6 +121,11 @@ p:not(:last-child) {
   margin-inline: auto;
 }
 
+.header,
+.section {
+  width: 100%;
+}
+
 .header {
   background-color: var(--color-white);
 }
