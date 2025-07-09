@@ -134,6 +134,8 @@ p:not(:last-child) {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  min-width: 640px;
   min-height: var(--header-height);
 }
 
@@ -141,15 +143,14 @@ p:not(:last-child) {
   width: 100%;
 }
 
-.header__menu-item {
-  padding: 4px 8px;
-  cursor: pointer;
-}
-
 .header__menu-list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+}
+
+.header__menu-item {
+  padding: 4px 8px;
+  cursor: pointer;
 }
 
 .header__menu-link {
@@ -173,7 +174,6 @@ p:not(:last-child) {
   background-color: var(--color-pink-dark);
   transition: width var(--transition-duration);
 }
-
 
 @media (hover: hover) {
   .header__menu-item:hover .header__menu-link{
