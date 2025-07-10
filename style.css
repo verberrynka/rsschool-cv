@@ -118,6 +118,10 @@ p:not(:last-child) {
   line-height: 1;
 }
 
+.text-accent {
+  color: var(--color-pink-dark);
+}
+
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   padding-inline: var(--container-padding-x);
