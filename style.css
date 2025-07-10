@@ -92,7 +92,8 @@ svg * {
 body {
   display: flex;
   flex-direction: column;
-  
+  min-height: 100vh;
+
   background-color: var(--color-white);
 
   font-family: var(--font-family);
@@ -101,7 +102,6 @@ body {
   font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0.3px;
-  min-height: 100vh;
 }
 
 p:not(:last-child) {
@@ -165,7 +165,6 @@ p:not(:last-child) {
   justify-content: center;
   
   color: var(--color-grey-dark);
-  transition-duration: var(--transition-duration);
 }
 
 .header__menu-link::after {
