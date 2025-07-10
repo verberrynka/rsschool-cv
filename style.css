@@ -126,7 +126,8 @@ p:not(:last-child) {
 }
 
 .header,
-.section {
+.section,
+.footer {
   width: 100%;
 }
 
