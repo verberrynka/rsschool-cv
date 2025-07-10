@@ -140,8 +140,7 @@ p:not(:last-child) {
   justify-content: center;
   align-items: center;
 
-  min-width: 920px;
-  min-height: var(--header-height);
+  height: var(--header-height);
 }
 
 .header__menu {
