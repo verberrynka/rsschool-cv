@@ -66,7 +66,7 @@ body {
   --color-pink-dark: #EB419E;
 
   --color-grey-light: #F8F8F8;
-  --color-grey-middle: #C2C2C2;
+  --color-grey-medium: #C2C2C2;
   --color-grey-dark: #616161;
 
   --font-family: "Inter", sans-serif;
@@ -108,7 +108,7 @@ p:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.text-middle {
+.text-medium {
   font-size: 36px;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -333,7 +333,7 @@ p:not(:last-child) {
 }
 
 .footer__author-name {
-  color: var(--color-grey-middle);
+  color: var(--color-grey-medium);
   transition-duration: var(--transition-duration);
 }
 
