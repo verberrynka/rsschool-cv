@@ -90,6 +90,9 @@ svg * {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  
   background-color: var(--color-white);
 
   font-family: var(--font-family);
@@ -98,6 +101,7 @@ body {
   font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0.3px;
+  min-height: 100vh;
 }
 
 p:not(:last-child) {
@@ -297,4 +301,66 @@ p:not(:last-child) {
   right: calc(-1 * var(--line-bold));
   bottom: -27px;
   background-color: var(--color-green);
+}
+
+
+
+.footer {
+  background-color: var(--color-grey-light);
+  border-top: var(--line-thin) solid var(--color-white);
+  margin-top: auto;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: 24px;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+
+  column-gap: 8px;
+}
+
+.footer__github-link {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.footer__author-name {
+  color: var(--color-grey-middle);
+  transition-duration: var(--transition-duration);
+}
+
+.footer__github-icon {
+  height: 40px;
+  aspect-ratio: 1;
+}
+
+.footer__school-icon {
+  width: 108px;
+  height: 40px;
+}
+
+@media (hover: hover) {
+  .footer__github-link:hover .footer__author-name {
+    /* color: var(--color-pink-dark); */
+    color: var(--color-grey-dark);
+  }
+
+  .footer__github-link:hover .footer__github-icon path,
+  .footer__school-icon:hover path:where([fill="#C2C2C2"]) {
+    /* fill: var(--color-pink-dark); */
+    fill: var(--color-grey-dark);
+  }
+
+  .footer__school-icon:hover path:where([stroke="#C2C2C2"]){
+    /* stroke: var(--color-pink-dark); */
+    stroke: var(--color-grey-dark);
+  }
 }
