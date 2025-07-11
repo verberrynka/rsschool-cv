@@ -446,7 +446,7 @@ p:not(:last-child) {
   justify-content: space-between;
   align-items: center;
 
-  padding-block: 24px;
+  padding-block: 16px;
   /* padding-inline: 0; */
 }
 
