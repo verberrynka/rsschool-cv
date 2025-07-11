@@ -315,7 +315,76 @@ p:not(:last-child) {
   background-color: var(--color-green);
 }
 
+.skills {
+  /* background-color: var(--color-grey-light); */
+  position: relative;
+  border-bottom: var(--line-thin) solid var(--color-green);
+}
 
+.skills::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: var(--line-thin);
+  top: 35%;
+  background-color: var(--color-green);
+}
+
+.skills::after {
+  content: '';
+  position: absolute;
+  width: 64%;
+  height: var(--line-thin);
+  top: 35%;
+  left: 0;
+  background-color: var(--color-pink-light);
+}
+
+.skills__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 72px;
+
+  padding-block: 36px calc(36px - var(--line-thin));
+}
+
+.skills__title {
+  position: relative;
+}
+
+.skills__list {
+  display: flex;
+  column-gap: 42px;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  font-weight: 500;
+}
+
+.skills__icon {
+  height: 90px;
+}
+
+@media (hover: hover) {
+  .skills__item:hover {
+    color: var(--color-pink-dark);
+  }
+
+  .skills__item:hover .skills__icon path:where([fill="#C2C2C2"]) {
+    fill: var(--color-pink-dark);
+  }
+
+  .skills__item:hover .skills__icon rect:where([stroke="#C2C2C2"]) {
+    stroke: var(--color-pink-dark);
+  }
+}
 
 .contacts {
   position: relative;
@@ -324,6 +393,7 @@ p:not(:last-child) {
   background-color: var(--color-pink-light);
   z-index: 1;
   height: 264px;
+  margin-top: 40px;
 }
 
 .contacts::after {
