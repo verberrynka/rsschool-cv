@@ -383,9 +383,108 @@ p:not(:last-child) {
   z-index: 2;
 }
 
+.education {
+  padding-block: 60px;
+}
+
+.education__inner {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding-inline: 0px;
+  position: relative;
+}
+
+.education__title {
+  display: inline-flex;
+  transform: rotate(-90deg); 
+  white-space: nowrap;
+  /* padding-top: 50px; */
+  margin-left: -70px;
+  /* position: relative; */
+  height: 50px;
+}
+
+.education__table-wrapper {
+  padding: 12px;
+  position: relative;
+  /* border-left: var(--line-thin) solid var(--color-green);
+  border-right: var(--line-thin) solid var(--color-pink-light); */
+}
+
+.education__table-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 41.23%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: var(--line-thin) solid var(--color-green);
+  border-right: none;
+}
+
+.education__table-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 57.37%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border: var(--line-thin) solid var(--color-pink-light);
+  border-left: none;
+}
+
+.education__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 24px;
+}
+
+tr:not(:last-child) {
+  border-bottom: var(--line-bold) solid var(--color-white);
+}
+
+td {
+  padding: 16px;
+}
+
+.table__institution {
+  width: 342px;
+  /* padding: 20px; */
+  font-weight: 440;
+  background-color: var(--color-pink-light);
+  border-right: var(--line-bold) solid var(--color-white);
+}
+
+
+.table__program {
+  width: 400px;
+}
+
+.table__program,
+.table__period {
+  background-color: var(--color-grey-light);
+}
+
+.table__period {
+  border-left: none;
+  color: var(--color-grey-medium);
+  text-align: end;
+  line-height: 1;
+  text-align: center;
+  padding-left: 0;
+}
+
+.table__period span {
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .skills {
   /* background-color: var(--color-grey-light); */
   position: relative;
+  padding-block: 60px;
   border-bottom: var(--line-thin) solid var(--color-green);
 }
 
@@ -461,7 +560,7 @@ p:not(:last-child) {
   background-color: var(--color-pink-light);
   z-index: 1;
   height: 264px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .contacts::after {
@@ -478,7 +577,6 @@ p:not(:last-child) {
 .contacts__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-inline: 38px;
   padding-block: 44px 24px;
   width: 100%;
