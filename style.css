@@ -406,16 +406,14 @@ p:not(:last-child) {
 }
 
 .education__table-wrapper {
-  padding: 12px;
+  padding: calc(var(--line-bold) + var(--line-thin));
   position: relative;
-  /* border-left: var(--line-thin) solid var(--color-green);
-  border-right: var(--line-thin) solid var(--color-pink-light); */
 }
 
 .education__table-wrapper::before {
   content: "";
   position: absolute;
-  width: 41.23%;
+  width: 41.48%;
   height: 100%;
   left: 0;
   top: 0;
@@ -426,7 +424,7 @@ p:not(:last-child) {
 .education__table-wrapper::after {
   content: "";
   position: absolute;
-  width: 57.37%;
+  width: 57.1%;
   height: 100%;
   right: 0;
   top: 0;
@@ -455,7 +453,6 @@ td {
   background-color: var(--color-pink-light);
   border-right: var(--line-bold) solid var(--color-white);
 }
-
 
 .table__program {
   width: 400px;
