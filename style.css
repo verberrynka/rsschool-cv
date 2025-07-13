@@ -516,8 +516,8 @@ td {
   position: absolute;
   width: 47px;
   height: 60px;
-  left: -60px;
-  top: -10px;
+  left: -65px;
+  bottom: -16px;
   background: url("./assets/icons/stars-pink-start.svg") center/contain no-repeat;
 }
 
@@ -527,7 +527,7 @@ td {
   width: 43px;
   height: 55px;
   right: -55px;
-  bottom: -5px;
+  bottom: 12px;
   background: url("./assets/icons/stars-pink-end.svg") center/contain no-repeat;
 }
 
@@ -564,7 +564,7 @@ td {
 }
 
 .languages {
-  padding-block: 100px;
+  padding-block: 80px;
 }
 
 .languages__inner {
@@ -582,9 +582,9 @@ td {
   content: "";
   position: absolute;
   width: var(--line-thin);
-  height: 200%;
+  height: calc(100% + var(--line-bold) * 2);
   right: -20%;
-  top: -50%;
+  bottom: -25%;
   background-color: var(--color-pink-light);
 }
 
@@ -620,12 +620,22 @@ td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 100px;
+  row-gap: 80px;
 }
 
-.projects__title {
+/* .projects__title {
   position: relative;
 }
+
+.projects__title::before {
+  content: '';
+  position: absolute;
+  width: 400%;
+  height: var(--line-thin);
+  left: 0;
+  bottom: calc(-1 * var(--line-bold));
+  background-color: var(--color-green);
+} */
 
 .projects__list {
   display: flex;
@@ -788,14 +798,14 @@ td {
 .contacts__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 16px;
+  column-gap: 12px;
 }
 
 .contacts__item {
   display: flex;
   justify-content: center;
 
-  width: 264px;
+  width: 266px;
   border: var(--line-thin) solid var(--color-white);
   cursor: pointer;
   
