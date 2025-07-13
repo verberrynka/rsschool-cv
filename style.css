@@ -630,6 +630,69 @@ td {
   padding: 8px;
 }
 
+.projects {
+  padding-block: 80px;
+  background-color: var(--color-grey-light);
+}
+
+.projects__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+}
+
+.projects__title {
+  position: relative;
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-grey-dark);
+  padding-bottom: 24px;
+  border: var(--line-thin) solid var(--color-pink-light);
+  background-color: var(--color-white);
+}
+
+.project-card__image {
+  width: 320px;
+  filter: grayscale(1);
+  transition: filter var(--transition-duration);
+  margin-bottom: 24px;
+}
+
+.project-card__name {
+ margin-bottom: 8px;
+}
+
+.project-card__type {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media (hover: hover) {
+
+  .project-card:hover {
+    color: var(--color-pink-dark);
+    border-color: var(--color-pink-dark);
+  }
+
+  .project-card:hover .project-card__image{
+    filter: grayscale(0);
+  }
+}
+
 .code {
   padding-block: 100px calc(100px + var(--line-bold));
   background-color: var(--color-grey-light);
