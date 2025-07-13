@@ -452,7 +452,7 @@ td {
 .table__institution {
   width: 342px;
   /* padding: 20px; */
-  font-weight: 440;
+  font-weight: 400;
   background-color: var(--color-pink-light);
   border-right: var(--line-bold) solid var(--color-white);
 }
@@ -551,6 +551,53 @@ td {
   .skills__item:hover .skills__icon rect:where([stroke="#C2C2C2"]) {
     stroke: var(--color-pink-dark);
   }
+}
+
+.languages {
+  padding-block: 80px;
+}
+
+.languages__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languages__title {
+  position: relative;
+}
+
+.languages__title::after {
+  content: "";
+  position: absolute;
+  width: var(--line-thin);
+  height: 200%;
+  right: -20%;
+  top: -50%;
+  background-color: var(--color-pink-light);
+}
+
+.languages__content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 52px;
+}
+
+.languages__row {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.languages__name {
+  font-weight: 400;
+}
+
+.languages__level {
+  display: block;
+  background-color: #D3FF9D;
+  padding: 8px;
 }
 
 .code {
