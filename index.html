@@ -185,16 +185,15 @@
           Code
         </h2>
         <div class="code__content">
-          <pre>
+          <pre class="code__code-example">
             <code>
-              function palindrome(string) {
+              function <span class="subtitle-accent">palindrome</span>(string) <span class="subtitle-accent">{</span>
 
               const cleanedStr = string.replace(/\W|_/g, "");
               const reversedStr = cleanedStr.split("").reverse().join("");
 
               return cleanedStr.toLowerCase() === reversedStr.toLowerCase();
-              
-              }
+              <span class="subtitle-accent">}</span>
             </code>
           </pre>
         </div>

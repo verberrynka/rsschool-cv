@@ -81,6 +81,8 @@ body {
   --line-thin: 3px;
   --line-bold: 12px;
   --line-with-gap: calc(var(--line-thin) + var(--line-bold));
+
+  --shadow: var(--line-bold) var(--line-bold) 0 0 var(--color-pink-light);
 }
 
 a,
@@ -225,7 +227,7 @@ p:not(:last-child) {
   width: 350px;
   aspect-ratio: 1;
   /* margin-left: 38px; */
-  box-shadow: var(--line-bold) var(--line-bold) 0 0 var(--color-pink-light);
+  box-shadow: var(--shadow);
 }
 
 .hero__image-wrapper::before {
@@ -358,7 +360,7 @@ p:not(:last-child) {
   height: 150px;
   top: 116px;
   left: 66px;
-  background: url("./assets/icons/stars.svg") center/contain no-repeat;
+  background: url("./assets/icons/stars-white.svg") center/contain no-repeat;
   z-index: 3;
 }
 
@@ -384,7 +386,7 @@ p:not(:last-child) {
 }
 
 .education {
-  padding-block: 60px;
+  padding-bottom: 100px;
 }
 
 .education__inner {
@@ -479,22 +481,22 @@ td {
 }
 
 .skills {
-  /* background-color: var(--color-grey-light); */
+  background-color: var(--color-grey-light);
   position: relative;
-  padding-block: 60px;
-  border-bottom: var(--line-thin) solid var(--color-green);
+  padding-block: 30px 60px;
+  /* border-bottom: var(--line-thin) solid var(--color-green); */
 }
 
-.skills::before {
+/* .skills::before {
   content: '';
   position: absolute;
   width: 100%;
   height: var(--line-thin);
   top: 35%;
   background-color: var(--color-green);
-}
+} */
 
-.skills::after {
+/* .skills::after {
   content: '';
   position: absolute;
   width: 64%;
@@ -502,7 +504,7 @@ td {
   top: 35%;
   left: 0;
   background-color: var(--color-pink-light);
-}
+} */
 
 .skills__inner {
   display: flex;
@@ -548,6 +550,47 @@ td {
   .skills__item:hover .skills__icon rect:where([stroke="#C2C2C2"]) {
     stroke: var(--color-pink-dark);
   }
+}
+
+.code {
+  padding-block: 120px;
+  /* padding-inline: 100px; */
+  background-color: var(--color-grey-light);
+}
+
+.code__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  position: relative;
+
+  max-width: var(--container-width);
+  min-width: var(--container-width);
+
+  background-color: var(--color-white);
+  box-shadow: var(--shadow);
+  padding-inline: 0;
+}
+
+.code__inner::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  bottom: 24px;
+  right: 24px;
+  background: url("./assets/icons/stars-green-and-pink.svg") center/contain no-repeat;
+}
+
+.code__title {
+  margin-top: -22px;
+  margin-left: 100px;
+}
+
+.code__code-example {
+  padding-block: 30px;
 }
 
 .contacts {
