@@ -497,25 +497,6 @@ td {
   padding-block: 30px 100px;
 }
 
-/* .skills::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: var(--line-thin);
-  top: 32%;
-  background-color: var(--color-green);
-}
-
-.skills::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: var(--line-thin);
-  bottom: 22%;
-  left: 0;
-  background-color: var(--color-pink-light);
-} */
-
 .skills__inner {
   display: flex;
   flex-direction: column;
@@ -536,7 +517,7 @@ td {
   width: 47px;
   height: 60px;
   left: -60px;
-  top: 0;
+  top: -10px;
   background: url("./assets/icons/stars-pink-start.svg") center/contain no-repeat;
 }
 
@@ -545,8 +526,8 @@ td {
   position: absolute;
   width: 43px;
   height: 55px;
-  right: -57px;
-  bottom: -10px;
+  right: -55px;
+  bottom: -5px;
   background: url("./assets/icons/stars-pink-end.svg") center/contain no-repeat;
 }
 
