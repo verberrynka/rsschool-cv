@@ -554,7 +554,6 @@ td {
 
 .code {
   padding-block: 120px;
-  /* padding-inline: 100px; */
   background-color: var(--color-grey-light);
 }
 
