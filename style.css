@@ -495,7 +495,6 @@ td {
   background-color: var(--color-grey-light);
   position: relative;
   padding-block: 30px 100px;
-  /* border-bottom: var(--line-thin) solid var(--color-pink-light); */
 }
 
 /* .skills::before {
@@ -673,7 +672,8 @@ td {
 }
 
 .project-card__name {
- margin-bottom: 8px;
+  margin-bottom: 8px;
+
 }
 
 .project-card__type {
