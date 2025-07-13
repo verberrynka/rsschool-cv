@@ -82,7 +82,8 @@ body {
   --line-bold: 12px;
   --line-with-gap: calc(var(--line-thin) + var(--line-bold));
 
-  --shadow: var(--line-bold) var(--line-bold) 0 0 var(--color-pink-light);
+  --shadow-pink: var(--line-bold) var(--line-bold) 0 0 var(--color-pink-light);
+  --shadow-green: var(--line-bold) var(--line-bold) 0 0 var(--color-green);
 }
 
 a,
@@ -227,7 +228,7 @@ p:not(:last-child) {
   width: 350px;
   aspect-ratio: 1;
   /* margin-left: 38px; */
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-pink);
 }
 
 .hero__image-wrapper::before {
@@ -569,7 +570,7 @@ td {
   min-width: var(--container-width);
 
   background-color: var(--color-white);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-green);
   padding-inline: 0;
 }
 
