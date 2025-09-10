@@ -324,7 +324,7 @@ p:not(:last-child) {
 
 .about-me {
   position: relative;
-  padding-block: 100px;
+  padding-top: 100px;
 }
 
 .about-me::before {
@@ -387,7 +387,7 @@ p:not(:last-child) {
 }
 
 .education {
-  padding-bottom: 100px;
+  padding-block: 100px;
 }
 
 .education__inner {
@@ -649,11 +649,26 @@ td {
   align-items: center;
   justify-content: center;
 
+  position: relative;
   color: var(--color-grey-dark);
   padding-bottom: 24px;
   border: var(--line-thin) solid var(--color-pink-light);
   background-color: var(--color-white);
 }
+
+/* .project-card::after {
+  content: "view";
+  position: absolute;
+  font-size: 28px;
+  font-weight: 500;
+  top: 12px;
+  left: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--color-green);
+  opacity: 100%;
+  transition-duration: opacity var(--transition-duration);
+} */
 
 .project-card__image {
   width: 320px;
@@ -682,6 +697,11 @@ td {
   .project-card:hover .project-card__image{
     filter: grayscale(0);
   }
+/*
+  .project-card:hover::after {
+    opacity: 0;
+  } */
+
 }
 
 .code {
